@@ -1,0 +1,191 @@
+body {
+    width: 100%;
+    height: 100%; 
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.nav {
+    size: 3rem;
+    font-size: 22px;
+    font-weight: bold;
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 6rem;
+    background-color: #007d79;
+    background-image: linear-gradient(to bottom, #007d79, black);
+}
+
+.title {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+    text-shadow: 2px 2px 4px #8a3ffc;
+
+}
+
+.library {
+    font-size: 40px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.log-in button {
+    height: 100%;
+    padding: 10px 20px; 
+    box-sizing: border-box; 
+    border-radius: 20%;
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 2px 2px 4px rgb(36, 36, 36);
+    background-image: linear-gradient(to bottom, #8a3ffc, black);
+}
+
+.book-section {
+    color:whitesmoke;
+    background-color: black;
+    min-height: 100vh;
+    position: relative;
+    
+}
+
+.placeholder {
+    padding: 1rem;
+}
+
+.add-book {
+    text-align: center;
+    padding: 1rem; 
+    transition: padding 0.3s ease; 
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 10%;
+    height: auto;
+    min-width: 10rem;
+    box-shadow: 2px 2px 4px white;
+    
+
+}
+
+.add-book button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 10%;
+
+}
+
+.add-book:hover {
+    background-color: #4e565f;
+}
+
+
+#new-book-form {
+    position: fixed;
+    text-align: center;
+    width: 15rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    background-color: #4e565f;
+    position: absolute;
+    box-shadow: 4px 4px 8px white;
+    font-size: 18px;
+
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%) scale(1);
+    border-radius: 5%;
+}
+
+#new-book-form input {
+    box-shadow: 2px 2px 4px rgb(44, 44, 44);
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+
+#new-book-form input:not([type="submit"]):not([type="checkbox"])  { 
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5%;
+} 
+
+
+#new-book-form #read-option {
+    display: flex;
+}
+
+#new-book-form input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #007d79;
+    color: white;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #007d79, black);
+    border-radius: 5%;
+    padding:0.7rem;
+}
+
+#new-book-form input[type="submit"]:hover {
+    background-color: #4e565f;
+    border: 2px solid white;
+}
+
+.space {
+    padding: 1rem;
+}
+#cards {
+    padding: 1rem;
+    display: flex;
+    /* border: 2px solid white; */
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+    display: grid;
+    width: 20rem;
+    height: 20rem;
+    background-color: #4e565f;
+    border: 2px solid rgb(139, 138, 138);
+    min-height:20rem;
+    min-width: 20rem;
+    padding: 1rem;
+}
+
+.card div, .card button {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card button {
+    color: white;
+    background-color: #8a3ffc;
+    background-image: linear-gradient(to bottom, #8a3ffc, black);
+    cursor: pointer;
+}
+
